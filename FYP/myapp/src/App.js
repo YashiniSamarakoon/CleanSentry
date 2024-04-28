@@ -262,10 +262,11 @@ function Home(){
 
   return (
     <div style={{ padding: '50px' }}>
-      <Title level={2} style={{ marginBottom: '30px' }}>Welcome to CLEANSENTRY</Title>
+      <Title level={2} style={{ marginBottom: '30px' }}>Welcome to CLEANSENTRY Application!</Title>
+      <Title level={3}>Waste Classification Report Generation</Title>
       <Divider />
       <Paragraph>
-        <Title level={4}>Select Location</Title>
+        <Title level={5}>Select Location</Title>
         <Select
           style={{ width: '100%', marginBottom: '20px' }}
           placeholder="Select location"
@@ -310,7 +311,7 @@ function About(){
         </Header> */}
         <AntdContent  style={{ padding: '30px' }}>
             <div style={{ background: '#fff', padding: 24, minHeight: 280 }}>
-                <Title>Welcome to the CLEANSENTRY Application!</Title>
+                <Title level={2} style={{ marginBottom: '20px' }}>About CLEANSENTRY</Title>
                 <Divider />
                 <Paragraph>
                     <Title level={4}>Why Beach Waste Classification and Recycling is Important?</Title>
@@ -406,8 +407,8 @@ function DroneOperatorLogin() {
   };
 
   return (
-    <div >
-      <h2>Drone Operator Login</h2>
+    <div style={{ padding: '50px' }}>
+      <Title level={2} style={{ marginBottom: '20px' }}>Drone Operator Login</Title>
       <Form
         name="basic"
         initialValues={{ remember: true }}
@@ -447,7 +448,7 @@ function RecyclingProcess() {
     <Layout>
       <CustomContent1 style={{ padding: '30px' }}>
         <div style={{ background: '#fff', padding: 24, minHeight: 280 }}>
-          <Title level={2} style={{ textAlign: 'center', marginBottom: '20px' }}>Recycling Process in Sri Lanka</Title>
+          <Title level={2} style={{ marginBottom: '20px' }}>Recycling Process in Sri Lanka</Title>
           <Divider />
           <Paragraph>
             <Title level={4}>Overview</Title>
@@ -584,7 +585,7 @@ function ImageUpload() {
         }
       });
       console.log(response.data)
-      message.success("Success.")
+      message.success("Images uploaded successessfully.")
       setUploadedFiles([])
     } catch (error) {
       message.error('Error uploading files.')
@@ -607,8 +608,8 @@ function ImageUpload() {
   ];
 
   return (
-    <div style={{ padding: '20px' }}>
-      <h1 style={{ marginBottom: '20px' }}>Drone image upload</h1>
+    <div style={{ padding: '50px' }}>
+      <Title level={2} style={{ marginBottom: '20px' }}>Drone Image Upload</Title>
       <div style={{ marginBottom: '20px' }}>
         <Select
           defaultValue="Dehiwala"
